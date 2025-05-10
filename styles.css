@@ -82,20 +82,35 @@ body {
   font-size: 0.85rem;
 }
 
-/* BOTÕES DE NAVEGAÇÃO */
+/* BOTÕES DE NAVEGAÇÃO COM BORDA ARREDONDADA E SOMBRA */
 .nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.3);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7); /* seta em branco translúcido */
   border: none;
   font-size: 1.5rem;
-  width: 32px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
+  padding: 0;            
+  border-radius: 50%;      /* deixa o botão redondo */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); sombra suave */
+  display: flex;           /* para centralizar o ícone */
+  align-items: center;     
+  justify-content: center; 
   cursor: pointer;
   z-index: 10;
 }
-.nav.prev { left: 4px; }
-.nav.next { right: 4px; }
-.nav:active { opacity: 0.6; }
+
+.nav.prev { left: 8px; }
+.nav.next { right: 8px; }
+
+.nav:active {
+  opacity: 0.6;
+}
+
+.nav:hover {
+  background: rgba(0, 0, 0, 0.6); /* escurece ao passar o mouse */
+  color: rgba(255, 255, 255, 1);   /* seta branca cheia ao passar o mouse */
+}
