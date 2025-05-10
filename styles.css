@@ -13,8 +13,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
+/* h1 no topo da página */
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #b2005d;
+  margin-bottom: 16px;
+}
+.descricao {
+  text-align: center;
+  font-size: 1rem;
+  color: #b2005d;
+  margin-bottom: 16px;
+}
 /* WRAPPER PARA CENTRALIZAR E CONTROLAR OVERFLOW */
 .carousel-wrapper {
   position: relative;
