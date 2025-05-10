@@ -9,11 +9,13 @@
 body {
   background: #ffc0cb;
   font-family: sans-serif;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 /* h1 no topo da página */
 .titulo {
